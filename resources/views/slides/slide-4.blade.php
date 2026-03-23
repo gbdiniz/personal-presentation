@@ -12,7 +12,7 @@
                     de <span class="text-red-700 syne">Software</span><br>
                 </h2>
                 <p class="jetbrains-mono text-gray-500 text-xs leading-relaxed max-w-xs">
-                    Dentro de área de tecnologia, quero me profissionalizar na área Full-Stack de sistemas, desde o planejamento do projeto, até o deploy. Atualmente uso PHP, mas quero aprender
+                    Dentro de área de tecnologia, quero me profissionalizar na área Full-Stack de sistemas, desde o planejamento do projeto, até o deploy. Atualmente uso PHP, mas quero aprender outras linguagens.
                 </p>
             </div>
 

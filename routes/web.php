@@ -7,6 +7,6 @@ Route::get('/', function () {
     // return view('welcome');
 });
 
-Route::get('/slide-1', function () {
-    return view('slide1');
+Route::get('/intro', function () {
+    return view('intro');
 });
