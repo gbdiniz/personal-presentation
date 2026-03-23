@@ -41,7 +41,7 @@
     <script>
         const cmd = document.querySelector("#cmd")
         let screen = document.querySelector("#screen");
-        let divisions = 8;
+        let divisions = 18;
 
         let finalCommand = "start MyPresentation.pptx";
         let timeOut = finalCommand.length * 100 + 500 + 500;
@@ -87,25 +87,26 @@
 
             setTimeout(() => {
                 for (let l = 1; l <= divisions; l++) {
-                setTimeout(() => {
-                    let col = document.querySelector(`#col-${l}`)
+                    let interaval = (800 * l) / divisions;
+                    setTimeout(() => {
+                        let col = document.querySelector(`#col-${l}`)
 
-                    col.animate([{
-                            transform: 'translateY(0px)'
-                        },
-                        {
-                            transform: `translateY(${screen.offsetHeight}px)`
-                        }
-                    ], {
-                        duration: 1000,
-                        easing: 'ease-in-out',
-                        iterations: 1,
-                        fill: 'forwards'
-                    })
+                        col.animate([{
+                                transform: 'translateY(0px)'
+                            },
+                            {
+                                transform: `translateY(${screen.offsetHeight}px)`
+                            }
+                        ], {
+                            duration: 1000,
+                            easing: 'ease-in-out',
+                            iterations: 1,
+                            fill: 'forwards'
+                        })
 
-                }, 150 * l);
-                // col.style.transform = 'translateY(50px)';
-            }
+                    }, interaval);
+                    // col.style.transform = 'translateY(50px)';
+                }
             }, 500)
         }, timeOut);
     </script>
